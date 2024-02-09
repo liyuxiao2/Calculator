@@ -1,4 +1,9 @@
+html {
+    box-sizing: border-box;
+}
+  
 .calculator-keys{
     display: grid;
     border-radius: 1;
+    font-family: 'Courier New', Courier, monospace;
 }
