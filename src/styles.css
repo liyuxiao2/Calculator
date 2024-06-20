@@ -1,0 +1,67 @@
+ * {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'bubble'; 
+    src: url('./CreteRound-Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+  }
+
+  body {
+    font-family: 'bubble' ;
+    font-size: 3em; /* Adjust font size as needed */
+    background-color: #FFA500;
+    color: #3498db; /* Text color */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 0.2em; /* Adjust letter spacing for bubble effect */
+    text-shadow: 
+    0 0 4px #ffffff, /* White shadow to create the bubble effect */
+  } 
+  .button {
+    font-family: 'bubble';
+    font-size: 1.5em; /* Adjust font size */
+    padding: 10px 20px; /* Padding around the text */
+    margin: 5px; /* Margin between buttons */
+    background-color: #3498db; /* Button background color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition-duration: 0.2s;
+  }
+
+  .button:hover{
+    background-color: #2980b9;
+    color: white;
+  }
+
+  .calculator {
+    font-family:'bubble';
+    position: absolute;
+    top: 50%; /* Align top of calculator to 50% of the container */
+    left: 50%; /* Align left of calculator to 50% of the container */
+    transform: translate(-50%, -50%); /* Move calculator back by 50% of its own width and height */
+    background-color: #F0FFFF; /* Example background color */
+    padding: 10px 20px; /* Optional: add padding */
+    border-radius: 50px; /* Optional: rounded corners */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: box shadow for depth */
+    max-width: 400px
+}
+
+.resultBox {
+  background-color:#008080 ;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  text-align: left;
+  overflow: hidden; /* Hide overflowing content */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+
+  
+  
