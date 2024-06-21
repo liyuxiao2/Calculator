@@ -1,6 +1,15 @@
 import React, {useState} from "react";
 import './styles.css';
 
+
+const DarkModeToggle = () =>  {
+    const[isDarkMode, setIsDarkMode] = useState(false)
+}
+
+const toggleDarkMode = () =>{
+    setIsDarkMode(!IsDarkMode);
+}
+
 function Button({label, onClick}){
     return(
         <button className="button" onClick={() => onClick(label)}>{label}</button>
@@ -47,38 +56,39 @@ const App  = () => {
     };
 
     return(
-        <div className="calculator">
-            <div className = "resultBox">
-                {input !== null && <p> {input} </p>}
-                {result !== null && <p> {result} </p>}
-            </div>
+        <div>
+            <div className="calculator">
+                <div className = "resultBox">
+                    {input !== null && <p> {input} </p>}
+                    {result !== null && <p> {result} </p>}
+                </div>
 
-            <div className="body">
-                <Button label="1" onClick={handleClick} />
-                <Button label="2" onClick={handleClick} />
-                <Button label="3" onClick={handleClick} />
-                <Button label="+" onClick={handleClick} />
-            </div>
-            <div>
-                <Button label="4" onClick={handleClick} />
-                <Button label="5" onClick={handleClick} />
-                <Button label="6" onClick={handleClick} />
-                <Button label="-" onClick={handleClick} />
-            </div>
-            <div>
-                <Button label="7" onClick={handleClick} />
-                <Button label="8" onClick={handleClick} />
-                <Button label="9" onClick={handleClick} />
-                <Button label="*" onClick={handleClick} />
-            </div>
-            <div>
-                <Button label="0" onClick={handleClick} />
-                <Button label="C" onClick={handleClick} />
-                <Button label="=" onClick={handleClick} />
-                <Button label="/" onClick={handleClick} />
+                <div className="body">
+                    <Button label="1" onClick={handleClick} />
+                    <Button label="2" onClick={handleClick} />
+                    <Button label="3" onClick={handleClick} />
+                    <Button label="+" onClick={handleClick} />
+                </div>
+                <div>
+                    <Button label="4" onClick={handleClick} />
+                    <Button label="5" onClick={handleClick} />
+                    <Button label="6" onClick={handleClick} />
+                    <Button label="-" onClick={handleClick} />
+                </div>
+                <div>
+                    <Button label="7" onClick={handleClick} />
+                    <Button label="8" onClick={handleClick} />
+                    <Button label="9" onClick={handleClick} />
+                    <Button label="*" onClick={handleClick} />
+                </div>
+                <div>
+                    <Button label="0" onClick={handleClick} />
+                    <Button label="C" onClick={handleClick} />
+                    <Button label="=" onClick={handleClick} />
+                    <Button label="/" onClick={handleClick} />
+                </div>
             </div>
         </div>
-        
     )
 }
 
